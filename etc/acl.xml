@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magento_Backend::content">
+                    <resource id="Lrntlp_Slider::slider_head" title="Slider" sortOrder="40" >
+                        <resource id="Lrntlp_Slider::slider_list" title="Manage Sliders" sortOrder="10">
+                            <resource id="Lrntlp_Slider::slider_list_save" title="Save Sliders" sortOrder="10" />
+                            <resource id="Lrntlp_Slider::slider_list_delete" title="Delete Sliders" sortOrder="20" />
+                        </resource>
+                        <resource id="Lrntlp_Slider::slider_configuration" title="Configuration" sortOrder="100"/>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

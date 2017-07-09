@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Lrntlp_Slider::slider_head"
+             title="Slider"
+             module="Lrntlp_Slider"
+             sortOrder="40"
+             parent="Magento_Backend::content"
+             resource="Lrntlp_Slider::slider_head"/>
+        <!-- START: Links -->
+        <add id="Lrntlp_Slider::slider_list"
+             title="Manage Sliders"
+             module="Lrntlp_Slider"
+             sortOrder="10"
+             action="slider/test/index"
+             parent="Lrntlp_Slider::slider_head"
+             resource="Lrntlp_Slider::slider_list"/>
+        <add id="Lrntlp_Slider::slider_configuration"
+             title="Configuration"
+             module="Lrntlp_Slider"
+             sortOrder="100"
+             action="test"
+             parent="Lrntlp_Slider::slider_head"
+             resource="Lrntlp_Slider::slider_configuration"/>
+        <!-- END:   links -->
+    </menu>
+</config>
